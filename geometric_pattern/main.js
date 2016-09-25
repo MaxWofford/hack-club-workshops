@@ -1,6 +1,9 @@
 var NUM_CIRCLES = 12;
 var circleDiameter;
 var circleRadius;
+var rVal;
+var gVal;
+var bVal;
 
 function setup()
 {
@@ -11,11 +14,17 @@ function setup()
 
 function draw()
 {
+    rVal = 255;
+    gVal = 0;
+    bVal = 0;
+    
     var isShifted = false;
     var y = height;
-   
+    
     while (y >= 0) 
     {
+        fill(color(rVal, gVal, bVal));
+        stroke(color(rVal, gVal, bVal));
         var x; 
         if (isShifted) 
         {
@@ -33,6 +42,9 @@ function draw()
         }
         
         y = y - circleRadius;
+        rVal = rVal - 2;
+        gVal = gVal + 7;
+        bVal = bVal + 3;
         isShifted = !isShifted;
     }
 }
