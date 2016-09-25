@@ -48,3 +48,12 @@ function draw()
         isShifted = !isShifted;
     }
 }
+
+function keyPressed() 
+{
+    if (keyCode === 115 || keyCode === 83)
+    {
+        saveCanvas('geometricPattern', 'png');
+    }
+    return false;
+}
