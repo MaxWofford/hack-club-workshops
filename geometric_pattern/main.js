@@ -32,7 +32,7 @@ function draw()
         
         //Every other iteration, shift over the circles
         var x; 
-        if (isShifted) 
+        if (isShifted)
         {
             x = circleRadius;
         }
