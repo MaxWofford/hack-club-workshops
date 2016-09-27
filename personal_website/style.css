@@ -1,5 +1,16 @@
+#Purposeless {
+    margin: 10px;
+    font-family: "Arial";
+    width: 300px;
+    height: 300px;
+    font-size: 50px;
+    color: yellow;
+    border-radius: 500px;
+    background-color: gray;
+}
+
 img {
-    width: 200px;
+    width: 350px;
 }
 
 body {
@@ -7,5 +18,5 @@ body {
     font-family: "Arial";
     color: #99ff99;
     background-color: #1a3300;
-    
 }
+
